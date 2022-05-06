@@ -7,8 +7,10 @@ Bundler.require :default, Rails.env
 
 module TruncateHtmlSpec
   class Application < Rails::Application
+    config.load_defaults "6.0"
     config.active_support.deprecation = :stderr
     config.session_store :cookie_store, :key => "_myapp_session"
     config.secret_token = "truncate_html_super_secret_dont_tell_anyone"
+    config.eager_load = false
   end
 end
