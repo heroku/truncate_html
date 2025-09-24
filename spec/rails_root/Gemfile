@@ -2,5 +2,5 @@
 source 'http://gemcutter.org'
 group :development, :test do
   gem "rails", "~> 3.2.13"
-  gem 'rspec-rails', '~> 2.13'
+  gem 'rspec-rails', '~> 2.13', '>= 2.13.1'
 end
